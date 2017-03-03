@@ -1,0 +1,26 @@
+<!--pages/create/create.wxml-->
+
+<view class="create">
+    <view class="header">
+        <text>请输入贵公司信息</text>
+    </view>
+    <view class="company">
+        <text>公司</text>
+        <input type="text" placeholder="输入公司名" bindinput="handleInput" />
+        <!--<icon type="warn" size="24"></icon>-->
+    </view>
+    <view class="location" bindtap="chooseLocation">
+        <text>位置</text>
+        <view class="address"><text>{{location.address}}</text></view>
+        <view class="arrow"></view>
+    </view>
+    <view class="error">
+        <text>{{errMsg}}</text>
+    </view>
+    <view class="button" bindtap="handleCreateCompany">
+        <button class="default-button" type="default" size="default" hover-class="hover">创建</button>
+    </view>
+</view>
+
+
+
