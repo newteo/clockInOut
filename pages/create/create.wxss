@@ -1,3 +1,7 @@
+page
+{
+    background: #fafafa;
+}
 .create {
     height: 100%;
     /*background: #eee;*/
@@ -5,13 +9,17 @@
 
 .header {
     height: 100rpx;
-    background: #eee;
+    background: #fafafa;
     font-size: 14px;
     padding-left: 40rpx;
-    color: #888888;
+    color: rgba(0,0,0,0.38);
     line-height: 100rpx;
 }
-
+.vLine
+{
+    border-top:2rpx solid #eee;
+    background: #fff;    
+}
 .company {
     /*background: blue;*/
     display: flex;
@@ -24,15 +32,17 @@
     box-sizing: border-box;
     font-size: 17px;
     line-height: 24px;
+    color: rgba(0,0,0,0.87);
 }
 
 .company input {
     /*background: lightgoldenrodyellow;*/
     padding-left: 32rpx;
-	color: rgba(0, 0, 0);
+	color: #757575;
     font-size: 12.75pt;
     flex: 1
 }
+
 .company icon{
     margin-right: 20rpx;
     height: 24px;
@@ -43,7 +53,6 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    border-bottom: 1px solid #eee;
     margin-left: 20rpx;
     box-sizing: border-box;
     font-size: 17px;
@@ -55,7 +64,11 @@
    	color: rgba(0, 0, 0, 0.54);
     font-size: 12.75pt;
 }
-
+.vBottomline
+{
+    border-bottom: 2rpx solid #eee;
+    background: #fff;    
+}
 .arrow {
     border-top: 2px solid #c7c7c7;
     border-right: 2px solid #c7c7c7;
@@ -77,6 +90,7 @@
 .default-button {
     background-color: #22a1e0;
     font-size: 18px; 
+    color: #fff;
 }
 
 .hover {

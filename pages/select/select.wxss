@@ -24,13 +24,13 @@ page {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    font-size: 23px;
+    font-size: 40rpx;
 	color: rgba(0, 0, 0, 0.58);
 }
 
 .company image {
-    height: 141px;
-    width: 128px;
+    height: 120px;
+    width: 100px;
 }
 
 .staff {
@@ -39,11 +39,11 @@ page {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    font-size: 23px;
+    font-size: 40rpx;
 	color: rgba(0, 0, 0, 0.58);
 }
 
 .staff image {
-    height: 138px;
-    width: 128px;
+    height: 120px;
+    width: 100px;
 }

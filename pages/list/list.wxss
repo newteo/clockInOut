@@ -16,7 +16,7 @@
 }
 
 .vLabel text {
-  color: #aaa;
+  color: rgba(0,0,0,0.38);
   font-size: 35rpx;
   margin-left: 40rpx;
 }
@@ -34,6 +34,6 @@
 }
 
 .companyName text {
-  color: #aaa;
+  color: rgba(0,0,0,0.54);
   font-size: 35rpx;
 }

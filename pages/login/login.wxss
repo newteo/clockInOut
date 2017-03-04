@@ -35,6 +35,7 @@ page {
 .info {
     padding: 0 60rpx;
     font-size: 13px;
+    line-height:37rpx;
 	color: rgba(0, 0, 0, 0.27);
 }
 

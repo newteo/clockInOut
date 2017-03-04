@@ -12,7 +12,7 @@
         <text>「打卡咯」是新潮科技自主研发的打卡小程序，微信登录后不会造成信息泄漏，请放心登录。</text>
     </view>
     <view class="button">
-        <button class="btn" hover-class="btn-hover" type="default" bindtap="handleLoginBtn">登录</button>
+        <button class="btn" hover-class="btn-hover"  bindtap="handleLoginBtn">登录</button>
     </view>
 
 </view>
