@@ -44,7 +44,7 @@ page {
 }
 
 .bottom {
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #eee;
 }
 
 .content-bottom {
