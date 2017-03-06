@@ -1,5 +1,5 @@
 .vWall {
-  background-color: rgba(200, 200, 200, 0.4);
+  background-color: #fafafa;
   display: flex;
   flex-direction: column;
 }
@@ -36,4 +36,8 @@
   margin-top: 108rpx;
   background-color: #22a1e0;
   color: #fff;
+}
+.hover {
+    background-color: #22a1e0;
+    opacity: 0.7;
 }

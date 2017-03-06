@@ -84,7 +84,7 @@ page
 }
 
 .button {
-    margin: 334rpx 40rpx;
+    margin: 120rpx 40rpx;
 }
 
 .default-button {
