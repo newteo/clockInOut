@@ -39,15 +39,15 @@ page {
 
 .time {
   font-size: 12.75pt;
-  line-height: 24px;
+  line-height: 48rpx;
   color: rgba(0, 0, 0, 0.87);
 }
 
 .place {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #eee;
   padding-top: 16rpx;
   padding-bottom: 30rpx; 
-  line-height: 18px;
+  line-height: 36rpx;
   font-size: 9.75pt;
   color: rgba(0, 0, 0, 0.54);
 }

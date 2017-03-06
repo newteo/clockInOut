@@ -8,8 +8,8 @@ page
 }
 
 .vLine {
-  height: 2rpx;
-  background-color: #e5e5e5;
+  height: 1rpx;
+  background-color: #eee;
 }
 
 .vLabel {
@@ -36,7 +36,7 @@ page
   display: flex;
   align-items: center;
   margin-left: 40rpx;
-  border-bottom: 2rpx solid rgba(200, 200, 200, 0.5);
+  border-bottom: 1rpx solid #eee;
 }
 
 .companyName text {

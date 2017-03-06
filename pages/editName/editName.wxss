@@ -5,8 +5,8 @@
 
 .vLocation {
   height: 88rpx;
-  border-top: 2rpx solid #e5e5e5;
-  border-bottom: 2rpx solid #e5e5e5;
+  border-top: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
   display: flex;
   align-items: center;
   background-color: #fff;

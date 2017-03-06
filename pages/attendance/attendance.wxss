@@ -8,7 +8,7 @@ page {
   padding: 40rpx 40rpx 20rpx 40rpx;
   color: rgba(0, 0, 0, 0.38);
   font-size: 9.75pt;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1rpx solid #eee;
 }
 
 .vLine {
@@ -38,7 +38,7 @@ page {
 
 .item-left {
   flex: 1;
-  line-height: 24px;
+  line-height: 48rpx;
   font-size: 12.75pt;
   color: #000;
 }

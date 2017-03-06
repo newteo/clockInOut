@@ -10,6 +10,5 @@ page {
 }
 
 .feedback image {
-        box-shadow: 4px 4px 4px #eee;
-
+        box-shadow: 8rpx 8rpx 8rpx #eee;
 }

@@ -27,7 +27,7 @@ page {
 }
 
 .title {
-    line-height: 65px;
+    line-height: 130rpx;
 	font-size: 23px;
 	color: #64b5f6;
 }

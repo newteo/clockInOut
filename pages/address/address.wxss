@@ -12,7 +12,7 @@ page {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1rpx solid #eee;
     padding:30rpx 40rpx; 
     font-size: 9.75pt;
     color: rgba(0, 0, 0, 0.38);
@@ -28,7 +28,7 @@ page {
 
 .address input {
     background: #ffffff;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1rpx solid #eee;
     padding: 20rpx 40rpx;
     color: rgba(0, 0, 0);
     font-size: 12.75pt;
