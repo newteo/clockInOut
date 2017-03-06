@@ -4,7 +4,6 @@ page
 }
 .create {
     height: 100%;
-    /*background: #eee;*/
 }
 
 .header {
@@ -17,7 +16,7 @@ page
 }
 .vLine
 {
-    border-top:2rpx solid #eee;
+    border-top:1rpx solid #eee;
     background: #fff;    
 }
 .company {
@@ -26,12 +25,12 @@ page
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1rpx solid #eee;
     height: 88rpx;
     margin-left: 20rpx;
     box-sizing: border-box;
     font-size: 17px;
-    line-height: 24px;
+    line-height: 48rpx;
     color: rgba(0,0,0,0.87);
 }
 
@@ -45,7 +44,7 @@ page
 
 .company icon{
     margin-right: 20rpx;
-    height: 24px;
+    height: 48rpx;
 }
 .location {
     padding: 20rpx 40rpx 20rpx 0rpx;
@@ -56,7 +55,7 @@ page
     margin-left: 20rpx;
     box-sizing: border-box;
     font-size: 17px;
-    line-height: 24px;    
+    line-height: 48rpx;    
 }
 .address {
     padding-left: 20rpx;
@@ -66,14 +65,14 @@ page
 }
 .vBottomline
 {
-    border-bottom: 2rpx solid #eee;
+    border-bottom: 1rpx solid #eee;
     background: #fff;    
 }
 .arrow {
-    border-top: 2px solid #c7c7c7;
-    border-right: 2px solid #c7c7c7;
-    width: 10px;
-    height: 10px;
+    border-top: 4rpx solid #c7c7c7;
+    border-right: 4rpx solid #c7c7c7;
+    width: 20rpx;
+    height: 20rpx;
     transform: rotate(45deg);
 }
 

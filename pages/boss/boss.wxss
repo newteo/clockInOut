@@ -8,12 +8,12 @@ page {
   font-size: 9.75pt;
   color: rgba(0, 0, 0, 0.38);
   padding: 40rpx 40rpx 18rpx 40rpx;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1rpx solid #eee;
 }
 
 .content {
   background: #fff;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1rpx solid #eee;
 }
 
 .item {
@@ -29,7 +29,7 @@ page {
   padding-right: 20rpx;
   color: rgba(0, 0, 0, 0.87);
   font-size: 12.75pt;
-  line-height: 24px;
+  line-height: 48rpx;
 }
 
 .item-right {
@@ -40,11 +40,11 @@ page {
   align-items: center;
   font-size: 12.75pt;
   color: rgba(0, 0, 0, 0.54);
-  line-height: 24px;
+  line-height: 48rpx;
 }
 
 .bottom {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1rpx solid #eee;
 }
 
 .content-bottom {
@@ -55,10 +55,10 @@ page {
 }
 
 .arrow {
-  border-top: 2px solid #c7c7c7;
-  border-right: 2px solid #c7c7c7;
-  width: 10px;
-  height: 10px;
+  border-top: 4rpx solid #c7c7c7;
+  border-right: 4rpx solid #c7c7c7;
+  width: 20rpx;
+  height: 20rpx;
   transform: rotate(45deg);
 }
 
