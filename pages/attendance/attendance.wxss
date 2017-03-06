@@ -62,3 +62,7 @@ page {
   background: #22a1e0;
   color: #fff;
 }
+.hover {
+    background-color: #22a1e0;
+    opacity: 0.7;
+}

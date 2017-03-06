@@ -69,3 +69,6 @@ page {
   font-size: 9.75pt;
   color: #576b95;
 }
+.click {
+    background-color: rgba(200,200,200,0.3);
+}

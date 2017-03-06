@@ -33,6 +33,6 @@
   </view>
     </view>
   <view class="footer">
-    <button class="button" bindtap="saveCommuterTime">保存</button>
+    <button class="button" hover-class="hover" bindtap="saveCommuterTime">保存</button>
   </view>
 </view>

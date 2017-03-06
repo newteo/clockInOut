@@ -1,6 +1,6 @@
 .vLine {
   height: 2rpx;
-  background-color: #e5e5e5;
+  background-color: rgba(0, 0, 0, 0.12);
 }
 
 .vDate {
