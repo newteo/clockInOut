@@ -1,6 +1,6 @@
+var key = require('../secret.js')
 
 var Api = require('./api.js')
-
 //获取code
 var getCode = function (callback) {
   wx.login({
@@ -25,7 +25,7 @@ function getToken(callback) {
           url: Api.session,
           data: {
             code: code,
-            newteo: 'b1efdafd3bbec0b7251c755859d6d9e5f073263c',
+            newteo: key.newteo,
             iv: res.iv,
             encryptedData: res.encryptedData
           },
