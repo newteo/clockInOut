@@ -4,7 +4,11 @@
     <image src="/images/icons/location.png"></image>
     <view class="tLocation"><text>{{companyLocation}}</text></view>
   </view>
-  <button class="checkBtn" hover-class="hover" bindtap="checkBtn_click" disabled="{{!checkButton}}">
+  <form report-submit bindsubmit="formAsk" > 
+  <view><button class="checkBtn" hover-class="hover"  formType="submit" >
     {{checkButton == true ? '申请加入' : '不能重复申请'}}
   </button>
+
+  </view>
+  </form>
 </view>

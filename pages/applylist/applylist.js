@@ -4,7 +4,7 @@ var Api = require('../../utils/api.js');
 
 Page({
   data: {
-    list: [],
+    list: [{},{},{}],
     winWidth: '',
     winHeight: '',
   },

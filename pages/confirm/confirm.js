@@ -49,8 +49,8 @@ Page({
     })
   },
 
-  checkBtn_click: function (event) {
-
+  formAsk: function (event) {
+console.log(event.detail)
     wx.showModal({
       title: '申请加入公司',
       content: '确定加入该公司吗？这无法变更，请仔细考虑',
@@ -59,7 +59,8 @@ Page({
           wx.request({
             url: Api.joinCompany + this.data.token,
             data: {
-              companyId: this.data.id
+              companyId: this.data.id,
+              formId: event.detail.formId
             },
             method: 'POST',
             success: (res) => {
