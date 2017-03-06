@@ -33,7 +33,7 @@
         <text>精准定位</text>
       </view>
       <view class="item-right">
-        <text>纬度:{{latitude}}，经度:{{longitude}}</text>
+        <text>纬度:{{latitude}}－经度:{{longitude}}</text>
         <view class="arrow"></view>
       </view>
     </view>
