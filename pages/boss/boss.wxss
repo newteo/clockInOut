@@ -44,14 +44,14 @@ page {
 }
 
 .bottom {
-  border-bottom: 2px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .content-bottom {
   margin-top: 40rpx;
   background: #fff;
-  border-bottom: 2rpx solid #eee;
-  border-top: 2rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+  border-top: 1rpx solid #eee;
 }
 
 .arrow {
