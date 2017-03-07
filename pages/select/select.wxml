@@ -4,11 +4,11 @@
     <view class="title">
         <text>— 选择身份登录 —</text>
     </view>
-    <view class="company" bindtap="handleCreateBtn">
+    <view class="company" disabled="{{btnDis}}" bindtap="handleCreateBtn">
         <image src="/images/icons/company.png" mode="aspectFit" />
         <text>企业</text>
     </view>
-    <view class="staff" bindtap="handleJoinBtn">
+    <view class="staff" disabled="{{btnDis}}" bindtap="handleJoinBtn">
         <image src="/images/icons/staff.png" mode="aspectFit" />
         <text>员工</text>
     </view>

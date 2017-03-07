@@ -13,7 +13,7 @@
 }
 
 .vLocation {
-  margin-top: 10rpx;
+  margin:10rpx 30rpx 0rpx 30rpx;
   display: flex;
   justify-content: center;
 }

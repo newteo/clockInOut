@@ -3,7 +3,9 @@ var util = require('../../utils/util.js');
 var Api = require('../../utils/api.js')
 
 Page({
-  data: {},
+  data: {
+    btnDis: false
+  },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
     // wx.clearStorageSync()
@@ -11,28 +13,21 @@ Page({
     var token = wx.getStorageSync('token');
     if (token && wx.getStorageSync('userType')) {
       util.checkToken(token, (res) => {
-        if(res == 'invail') {
+        if (res == 'invail') {
           wx.clearStorageSync()
         }
-        else if(res == 'good') {
-          this.updateUserType((userType) => {
-          this.switchPages(userType)
-        })
+        else {
+          if (res == 'good') {
+            this.updateUserType((userType) => {
+              this.switchPages(userType)
+            })
+          }
         }
-      })  
+      })
     }
-  },
-  onReady: function () {
-    // 页面渲染完成
   },
   onShow: function () {
     // 页面显示
-  },
-  onHide: function () {
-    // 页面隐藏
-  },
-  onUnload: function () {
-    // 页面关闭
   },
 
   switchPages: function (userType) {
@@ -57,7 +52,6 @@ Page({
   updateUserType: function (cb) {
     wx.request({
       url: Api.userInfo + wx.getStorageSync('token'),
-      data: {},
       method: 'GET',
       success: (res) => {
         console.log(res)
@@ -75,28 +69,41 @@ Page({
       title: '登录中',
       icon: 'loading'
     })
-    util.getToken((res) => {
-      console.log(res)
-      //用户拒绝授权
-      if (res.errMsg == 'userDenyed') {
-        wx.redirectTo({
-          url: '/pages/unAuth/unAuth',
-        })
-      }
-      //用户允许授权
-      else {
-        wx.setStorageSync('userType', res.types)
-        wx.setStorage({
-          key: 'token',
-          data: res.token,
-          success: (sssres) => {
-            this.switchPages(res.types)
-          },
-          fail: function () {
-            console.error('存储token时失败')
-          }
-        })
-      }
-    })
+    if (this.data.btnDis != true) {
+      this.setData({
+        btnDis: true
+      })
+
+      util.getToken((res) => {
+        console.log(res)
+        //用户拒绝授权
+        if (res.errMsg == 'userDenyed') {
+          wx.redirectTo({
+            url: '/pages/unAuth/unAuth',
+          })
+        }
+        //用户允许授权
+        else {
+          wx.setStorageSync('userType', res.types)
+          wx.setStorage({
+            key: 'token',
+            data: res.token,
+            success: (sssres) => {
+              this.switchPages(res.types)
+            },
+            fail: function () {
+              console.error('存储token时失败')
+            }
+          })
+        }
+      })
+      util.disable(1000, 3, (backData) => {
+        if (backData == false)
+          this.setData({
+            btnDis: false
+          })
+            console.log('解除禁用')          
+      })
+    }
   }
 })

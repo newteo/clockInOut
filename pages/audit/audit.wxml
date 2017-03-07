@@ -2,4 +2,5 @@
 <image src="/images/icons/sent.png" mode="aspectFit"></image>
 <text class="tLabel">{{message}}</text>
 <text class="tMessage">请等待 {{companyName}} 审核</text>
+  <!--<button class="bBack" hover-class="btn-hover" disabled="{{btnDis}}" bindtap="back">返回企业列表</button>-->
 </view>

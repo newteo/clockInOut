@@ -6,10 +6,8 @@
   </view>
   <view class="vLine">
   <view class="company">
-
     <text>公司</text>
     <input type="text" placeholder="输入公司名" bindinput="handleInput" />
-
     <!--<icon type="warn" size="24"></icon>-->
   </view>
   </view>

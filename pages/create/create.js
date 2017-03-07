@@ -15,18 +15,10 @@ Page({
       token: wx.getStorageSync('token')
     })
   },
-  onReady: function () {
-    // 页面渲染完成
-  },
   onShow: function () {
     // 页面显示
   },
-  onHide: function () {
-    // 页面隐藏
-  },
-  onUnload: function () {
-    // 页面关闭
-  },
+
 
   //公司输入
   handleInput: function (event) {
@@ -83,6 +75,7 @@ Page({
 
   //创建公司
   createCompany: function () {
+    this.setData({ btnDis: true })
     var apiUrl = Api.company + this.data.token
     wx.request({
       url: apiUrl,
@@ -119,11 +112,17 @@ Page({
                 }
               }
             })
-          }
-          else {
+          }else {
             wx.showModal({
               title: '创建失败',
-              content: '请您稍后再试'
+              content: '请您稍后再试',
+              success: (res) => {
+                if (res.confirm) {
+                  this.setData({
+                    btnDIs: false
+                  })
+                }
+              }
             })
           }
         }

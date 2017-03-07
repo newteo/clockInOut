@@ -1,5 +1,6 @@
+var delay = 10
 var key = require('../secret.js')
-
+var time
 var Api = require('./api.js')
 //获取code
 var getCode = function (callback) {
@@ -114,26 +115,40 @@ function obtainIndate(cb) {
     + '-' + day)
 }
 
-var checkToken = function(token, cb) {
+var checkToken = function (token, cb) {
   wx.request({
-    url: Api.userInfo + token ,
+    url: Api.userInfo + token,
     data: {},
     method: 'GET',
-    success: function(res){
+    success: function (res) {
       // success
-      if(res.statusCode == 200) {
+      if (res.statusCode == 200) {
         console.log('token有效')
-        typeof cb =='function' && cb('good')
+        typeof cb == 'function' && cb('good')
       }
       else {
-         console.log('token无效')
-         typeof cb == 'function' && cb('invail')
+        console.log('token无效')
+        typeof cb == 'function' && cb('invail')
       }
 
     }
   })
 }
+function disable(seconds, total, callback) {
+  if (total != '')
+    delay = total
+  delay--;
+  if (delay == 0) {
+    delay = 10
+    clearTimeout(time)
+    typeof callback == "function" && callback(false)
+    console.log('清除了定时器')
+  } else {
+    console.log('重开了定时器计时' + delay)
+    time = setTimeout(() => { this.disable(seconds,'', callback) }, seconds);
+  }
 
+}
 
 module.exports = {
   getToken: getToken,
@@ -142,4 +157,5 @@ module.exports = {
   translateWeek: translateWeek,
   loadStaffDate: loadStaffDate,
   obtainIndate: obtainIndate,
+  disable: disable,
 }

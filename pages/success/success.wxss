@@ -4,7 +4,6 @@
 }
 
 .iIcon {
-  width: 300rpx;
   height: 318rpx;
   margin-top: 200rpx;
 }
