@@ -84,6 +84,7 @@ Page({
         this.punch(res.latitude, res.longitude)
       },
       fail: (res) => {
+        console.log(res);
         wx.hideNavigationBarLoading()
         this.setData({
           info: '打卡功能需要获取您的地理位置信息，请稍后重试'

@@ -1,5 +1,5 @@
 
-var host = 'https://api.clock.newteo.com/';
+var host = 'http://localhost/';
 
 var session = host + 'session';
 var company = host + 'company/new?token=';

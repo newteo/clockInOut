@@ -72,31 +72,31 @@ Page({
     if (this.data.btnDis != true) {
       this.setData({
         btnDis: true
-      })
-
-      util.getToken((res) => {
-        console.log(res)
-        //用户拒绝授权
-        if (res.errMsg == 'userDenyed') {
-          wx.redirectTo({
-            url: '/pages/unAuth/unAuth',
-          })
-        }
-        //用户允许授权
-        else {
-          wx.setStorageSync('userType', res.types)
-          wx.setStorage({
-            key: 'token',
-            data: res.token,
-            success: (sssres) => {
-              this.switchPages(res.types)
-            },
-            fail: function () {
-              console.error('存储token时失败')
-            }
-          })
-        }
-      })
+      });
+      this.switchPages('user');
+      // util.getToken((res) => {
+      //   console.log(res)
+      //   //用户拒绝授权
+      //   if (res.errMsg == 'userDenyed') {
+      //     wx.redirectTo({
+      //       url: '/pages/unAuth/unAuth',
+      //     })
+      //   }
+      //   //用户允许授权
+      //   else {
+      //     wx.setStorageSync('userType', res.types)
+      //     wx.setStorage({
+      //       key: 'token',
+      //       data: res.token,
+      //       success: (sssres) => {
+      //         this.switchPages(res.types)
+      //       },
+      //       fail: function () {
+      //         console.error('存储token时失败')
+      //       }
+      //     })
+      //   }
+      // })
       util.disable(1000, 3, (backData) => {
         if (backData == false)
           this.setData({
