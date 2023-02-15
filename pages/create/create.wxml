@@ -24,6 +24,8 @@
     <text>{{errMsg}}</text>
   </view>
   <view class="button" bindtap="handleCreateCompany">
-    <button class="default-button" style="{{btnDis==true ? 'background-color: rgba(34,161,224,0.4);color: rgba(255,255,255,0.4)' : 'background-color: #22a1e0; color: #fff'}}" disabled="{{btnDis==true}}" size="default" hover-class="hover">创建</button>
+    <button class="default-button" style="{{btnDis==true ? 'background-color: rgba(34,161,224,0.4);color: rgba(255,255,255,0.4)' : 'background-color: #22a1e0; color: #fff'}}" 
+    size="default" hover-class="hover">创建</button>
+    <!-- disabled="{{btnDis==btnDis}}"  -->
   </view>
 </view>

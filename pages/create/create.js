@@ -64,6 +64,8 @@ Page({
 
   //创建按钮
   handleCreateCompany: function () {
+    // this.createCompany()
+        // wx.showNavigationBarLoading()
     this.checkInput((res) => {
       if (res == 'success') {
         console.log('验证通过')

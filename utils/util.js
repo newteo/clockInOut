@@ -34,8 +34,8 @@ function getToken(callback) {
           success: function (res) {
             typeof callback == "function" && callback(res.data)
           },
-          fail: function () {
-            console.log('wx.request 请求失败')
+          fail: function (res) {
+            console.log('wx.request 请求失败',res)
           }
         })
       },

@@ -74,6 +74,7 @@ Page({
         btnDis: true
       });
       // this.switchPages('user');
+      console.log("getToken")
       util.getToken((res) => {
         console.log(res)
         //用户拒绝授权
