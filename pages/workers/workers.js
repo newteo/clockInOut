@@ -87,4 +87,7 @@ Page({
   more_click: function (e) {
     wx.navigateTo({ url: '/pages/signMemo/signMemo?staffid=' + e.currentTarget.dataset.staffid })
   },
+  backUser: function (e) {
+    util.switchPages("staff");
+  },
 })

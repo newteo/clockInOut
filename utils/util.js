@@ -149,6 +149,22 @@ function disable(seconds, total, callback) {
   }
 
 }
+function switchPages (userType) {
+  console.log(userType)
+  switch (userType) {
+    case 'manager':
+      wx.switchTab({ url: '/pages/workers/workers' })
+      break;
+    case 'staff':
+      wx.redirectTo({ url: '/pages/scan/scan?' })
+      break;
+    case 'user':
+      wx.redirectTo({ url: '/pages/select/select' })
+      break;
+    default:
+      break;
+  }
+}
 
 module.exports = {
   getToken: getToken,
@@ -158,4 +174,5 @@ module.exports = {
   loadStaffDate: loadStaffDate,
   obtainIndate: obtainIndate,
   disable: disable,
+  switchPages: switchPages,
 }

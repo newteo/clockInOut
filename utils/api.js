@@ -1,5 +1,5 @@
 
-var host = 'http://localhost:801/';
+var host = 'http://192.168.124.4:801/';
 
 var session = host + 'session';
 var company = host + 'company/new?token=';

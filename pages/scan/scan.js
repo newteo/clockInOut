@@ -73,6 +73,7 @@ Page({
     wx.showNavigationBarLoading()
     ing = setInterval(() => { this.sleepOneMinute() }, 1000);
     console.log("2")
+    this.punch(0,0)
 
     wx.getLocation({
       type: 'wgs84',

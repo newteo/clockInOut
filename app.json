@@ -37,6 +37,11 @@
       "iconPath": "images/tarbar/check.png",
       "selectedIconPath": "images/tarbar/check-HL.png"
     },{
+      "pagePath": "pages/scan/scan",
+      "text": "打卡",
+      "iconPath": "images/tarbar/check.png",
+      "selectedIconPath": "images/tarbar/check-HL.png"
+    },{
       "pagePath": "pages/boss/boss",
       "text": "管理",
       "iconPath": "images/tarbar/bussiness.png",

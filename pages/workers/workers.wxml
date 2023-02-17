@@ -27,3 +27,4 @@
     <text>暂无员工</text>
   </view>
 </block>
+<!-- <view bindtap="backUser">用户视角</view>  -->
